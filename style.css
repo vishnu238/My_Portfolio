@@ -287,3 +287,327 @@ span{
 .btn-box.btns a::before{
     background: var(--second-bg-color);
 }
+
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem 0; /* Added padding for centering and spacing */
+    text-align: center; /* Center-align text */
+}
+
+.education-container {
+    max-width: 600px; /* Adjust the maximum width as needed */
+    border-radius: 0.8rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+.education-box h3, .education-box h4, .education-box p {
+    margin: 1rem 0;
+    font-size: 2rem; /* Adjust the font size for consistency */
+    color: var(--text-color); /* Set text color */
+}
+
+
+.education-box i {
+    font-size: 3rem; /* Adjust the icon size as needed */
+    color: var(--main-color);
+    transition: color 0.5s;
+}
+
+.education-box:hover i {
+    color: var(--bg-color);
+}
+
+
+
+
+.education-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5rem; /* Adjust height for spacing */
+    background: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: background 0.5s, color 0.5s;
+    margin-top: 1rem; /* Add top margin for spacing */
+}
+
+.education-box .btn:hover {
+    background: var(--bg-color);
+    color: var(--main-color);
+}
+
+.education-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+.education-box .btn:hover::before {
+    width: 100%;
+}
+
+
+
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.skills-container {
+    max-width: 600px;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+.skills-box {
+    text-align: center;
+}
+
+.skills-box i {
+    font-size: 3rem;
+    color: var(--main-color);
+    transition: color 0.5s;
+}
+
+.skills-box:hover i {
+    color: var(--bg-color);
+}
+
+.skills-box h3,
+.skills-box p {
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.skills-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem; /* Adjust the width as needed */
+    height: 5rem; /* Adjust the height as needed */
+    background: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.skills-box .btn:hover {
+    color: var(--main-color);
+}
+
+.skills-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.skills-box .btn:hover::before {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-box {
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-box i {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.contact-box h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.contact-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+
+.contact-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5rem;
+    background: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 1rem 0; /* Adjust the margin to control the gap */
+}
+
+.contact-box .btn:hover {
+    color: var(--main-color);
+}
+
+.contact-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.contact-box .btn:hover::before {
+    width: 100%;
+}
+
+
+
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.center-content h2 {
+    font-size: 3rem;
+}
+
+.center-content .hire-me-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.center-content .btn-box {
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+/* For the "View Project" button in the projects section */
+.project-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5rem;
+    background: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 1rem;
+}
+
+.project-box .btn:hover {
+    color: var(--main-color);
+}
+
+.project-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.project-box .btn:hover::before {
+    width: 100%;
+}
+
+
+
+
+
+.details-container{
+    line-height: 2.0;
+}
+    
